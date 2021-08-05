@@ -33,9 +33,9 @@ public class ErrorTest {
 
 	@Test
 	public void allArgumentConstructorTest() {
-		Error error1 = new Error(HttpStatus.OK, LocalDateTime, "msg");
+		Error error1 = new Error(HttpStatus.OK, localDateTime, "msg");
 		assertEquals(HttpStatus.OK, error1.getStatus());
-		assertEquals(LocalDateTime, error1.getTimestamp());
+		assertEquals(localDateTime, error1.getTimestamp());
 		assertEquals("msg", error1.getMessage());	
 	}
 
